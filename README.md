@@ -6,31 +6,16 @@
 
 ## 游戏截图
 
-以下四张截图来自 2026 年恢复运行后的实际游玩，作者已确认体验与当年的版本一致。
-
-### 初始地图与新手引导
-
-角色保持在画面中央，地图随移动滚动；左上角显示生命值与金币，右侧是可以翻页和隐藏的新手引导。
-
-![初始地图：角色、生命与金币状态栏以及新手引导](docs/screenshots/01-crossroad-tutorial.png)
-
-### 传送门与地图探索
-
-接近传送门后按 F 切换场景。不同地图及进入方式对应不同出生位置。
-
-![初始地图中的传送门与灵魂攻击教程](docs/screenshots/02-crossroad-portal.png)
-
-### 绿色地图
-
-三张地图分别由独立子类配置，拥有不同尺寸、传送门位置、出生点与怪物生成概率。
-
-![Greenpath 地图中的角色与传送门](docs/screenshots/03-greenpath.png)
-
-### 灵魂状态
-
-按空格进入灵魂状态，角色外观与状态栏随之变化；灵魂攻击结束后会进入技能冷却。
-
-![CityOfTears 地图中的灵魂状态、怪物与技能引导](docs/screenshots/04-city-of-tears-soul.png)
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/01-crossroad-tutorial.png" alt="游戏截图 1" width="100%"></td>
+    <td width="50%"><img src="docs/screenshots/02-crossroad-portal.png" alt="游戏截图 2" width="100%"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/03-greenpath.png" alt="游戏截图 3" width="100%"></td>
+    <td width="50%"><img src="docs/screenshots/04-city-of-tears-soul.png" alt="游戏截图 4" width="100%"></td>
+  </tr>
+</table>
 
 ## 已实现的内容
 
@@ -57,23 +42,11 @@ macOS 也可以双击 `run.command`。Windows 可使用 `py -3 tools/manage.py r
 
 图片通过相对文件路径加载。启动工具会自动切换到项目根目录；请保留整个 `img/` 目录，不要只移动 JAR。
 
-## 键位
+## 游戏指引
 
-| 场景 | 按键 | 功能 |
-| --- | --- | --- |
-| 菜单 | H | 进入设置 |
-| 设置 | Q / W / E | 选择窗口尺寸 |
-| 设置 | A / S / D / F | 选择刷新间隔 |
-| 设置 | Z / X / C | 选择难度 |
-| 设置 | 空格 | 开始游戏 |
-| 游戏 | W / A / S / D | 移动 |
-| 游戏 | J | 普通攻击；灵魂状态下为灵魂攻击 |
-| 游戏 | 空格 | 进入或结束灵魂状态 |
-| 游戏 | F | 在传送门附近切换地图 |
-| 游戏 | N | 显示或隐藏教程 |
-| 游戏 | Page Up / Page Down | 翻阅教程 |
+启动后按 H 进入设置，按空格开始游戏。游戏内提供多页教程，使用 N 显示或隐藏，Page Up / Page Down 翻页；Mac 紧凑键盘可尝试 Fn + 上/下方向键。
 
-Mac 紧凑键盘可尝试 Fn + 上/下方向键翻页。窗口尺寸为 1024×576、1280×720、1600×900；刷新间隔为 64、32、16、8 ms，实际帧率还受逻辑执行及线程调度影响。
+移动、战斗、灵魂技能与地图探索的具体操作和规则请参照游戏内指引。
 
 ## 实现方式
 
