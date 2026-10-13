@@ -44,11 +44,11 @@ def build():
     sources = sorted((ROOT / 'src').rglob('*.java'))
     compiler = java_tool('javac')
     subprocess.run([compiler, '--release', '14', '-encoding', 'UTF-8', '-d', str(classes), *map(str, sources)], cwd=ROOT, check=True)
-    with ZipFile(ROOT / 'LittleKnight.jar', 'w', ZIP_DEFLATED) as jar:
+    with ZipFile(ROOT / 'CircleKnight.jar', 'w', ZIP_DEFLATED) as jar:
         jar.writestr('META-INF/MANIFEST.MF', 'Manifest-Version: 1.0\r\nMain-Class: Windows.StartMenu\r\n\r\n')
         for item in sorted(classes.rglob('*.class')):
             jar.write(item, item.relative_to(classes).as_posix())
-    print(f'已编译 {len(sources)} 个源文件，生成 LittleKnight.jar（Java 14 字节码）', flush=True)
+    print(f'已编译 {len(sources)} 个源文件，生成 CircleKnight.jar（Java 14 字节码）', flush=True)
 
 
 def check():
@@ -87,11 +87,11 @@ def main():
         build()
         check()
     elif action == 'run':
-        if not (ROOT / 'LittleKnight.jar').is_file():
+        if not (ROOT / 'CircleKnight.jar').is_file():
             build()
         java = java_tool('java')
         print(f'Java: {java}\n资源目录: {ROOT}', flush=True)
-        return subprocess.call([java, '-jar', 'LittleKnight.jar'], cwd=ROOT)
+        return subprocess.call([java, '-jar', 'CircleKnight.jar'], cwd=ROOT)
     else:
         raise RuntimeError('用法：python3 tools/manage.py [run|build|check]')
     return 0

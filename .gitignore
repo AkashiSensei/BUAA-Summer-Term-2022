@@ -4,6 +4,7 @@
 build/
 __pycache__/
 LittleKnight.jar
+CircleKnight.jar
 # Local historical material; kept on disk, excluded from publication.
 artwork/
 original/

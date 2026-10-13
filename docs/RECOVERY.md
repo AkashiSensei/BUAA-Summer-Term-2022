@@ -1,4 +1,8 @@
-# 版本与恢复记录
+# 圆圈骑士（Circle Knight）版本与恢复记录
+
+## 名称依据
+
+原始开始菜单 `img/Start_Menu.jpg` 显示「CIRCLE KNIGHT / 圆圈骑士」，窗口标题也使用 Circle Knight。对外名称统一为「圆圈骑士（Circle Knight）」，构建产物为 `CircleKnight.jar`；历史目录中的 Little Knight 及源码角色类 `LittleKnight` 保留原名。
 
 ## 版本依据
 
