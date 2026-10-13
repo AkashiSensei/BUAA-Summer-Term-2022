@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+*.iml
+build/
+__pycache__/
+LittleKnight.jar
+# Local historical material; kept on disk, excluded from publication.
+artwork/
+original/
+docs/*.docx
+docs/*.txt
+docs/ideas.md

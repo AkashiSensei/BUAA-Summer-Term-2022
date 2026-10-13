@@ -1,0 +1,2 @@
+# Preserve the original coursework source bytes, including CRLF.
+src/**/*.java -text
