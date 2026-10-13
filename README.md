@@ -1,6 +1,6 @@
 # Little Knight / Circle Knight
 
-2022 年大一暑期完成的 Java Swing 二维俯视角动作小游戏。项目从零学习 Java 起步，围绕角色移动、攻击、灵魂技能、怪物巡逻与地图切换，实现了一套可以游玩的小游戏流程。项目目录沿用 **Little Knight**，游戏窗口标题为 **Circle Knight**。
+2022 年大一暑期小学期完成的软件项目。课程允许自由选择软件类型和实现技术，本项目选择使用 Java Swing 开发二维俯视角动作小游戏。开发从零学习 Java 起步，围绕角色移动、攻击、灵魂技能、怪物巡逻与地图切换，实现了一套可以游玩的小游戏流程。项目目录沿用 **Little Knight**，游戏窗口标题为 **Circle Knight**。
 
 游戏的灵感和美术素材来自《空洞骑士》。与原作死亡后留下灵魂的设计不同，这里将「灵魂状态」做成主动技能：可以暂时避开物理伤害、越过地图边界，也能释放伤害更高的灵魂攻击。
 
@@ -46,8 +46,8 @@
 环境要求：**Python 3.8+、JDK 14+**。首次运行会编译源码，之后可使用 Java 14+ 运行生成的 JAR。只依赖 Java 标准库与 Python 标准库，无需安装第三方包。
 
 ```sh
-git clone https://github.com/AkashiSensei/BUAA-Java-Summer-2022.git
-cd BUAA-Java-Summer-2022
+git clone https://github.com/AkashiSensei/BUAA-Summer-Term-2022.git
+cd BUAA-Summer-Term-2022
 python3 tools/manage.py run
 ```
 
